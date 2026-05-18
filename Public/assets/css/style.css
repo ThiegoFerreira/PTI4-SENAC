@@ -160,22 +160,210 @@ body{
 }
 
 /* =========================
+   PÁGINA DE CADASTRO
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+#form-expositor div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+#form-expositor label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+#form-expositor input[type="text"],
+#form-expositor textarea,
+#form-expositor input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+    font-size: 1rem;
+    font-family: inherit;
+    color: #333;
+    background: #fafafa;
+    
+    transition: all 0.3s ease;
+}
+
+#form-expositor textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Estado de Foco */
+#form-expositor input:focus,
+#form-expositor textarea:focus {
+    outline: none;
+    border-color: #27ae60;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+/* Customização do input de arquivo */
+#form-expositor input[type="file"] {
+    padding: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* =========================
+   BOTÃO DE SUBMIT
+========================= */
+
+#form-expositor button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px;
+    
+    background: #27ae60;
+    color: white;
+    
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-expositor button[type="submit"]:hover {
+    background: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 145, 80, 0.3);
+}
+
+/* =========================
+   MENSAGENS DE FEEDBACK
+========================= */
+
+#mensagem {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.msg-sucesso {
+    padding: 15px;
+    background: #ecfdf3;
+    color: #27ae60;
+    border: 1px solid #a3e4bd;
+}
+
+.msg-erro {
+    padding: 15px;
+    background: #fdf3f3;
+    color: #e74c3c;
+    border: 1px solid #f5b7b1;
+}
+
+/* =========================
+   MELHORIAS DA PÁGINA INICIAL (INDEX.PHP)
+========================= */
+
+main {
+    padding: 0 20px;
+}
+
+.inicio-secao {
+    text-align: center;
+    margin: 40px auto 10px auto;
+    max-width: 1300px;
+    color: #2c3e50;
+}
+
+/* =========================
+   ESTADO VAZIO (SEM EXPOSITORES)
+========================= */
+
+.sem-expositores {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+    border: 2px dashed #cbd5e1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sem-expositores p {
+    font-size: 1.2rem;
+    color: #64748b;
+    padding: 0 !important;
+}
+
+.sem-expositores .btn-atalho {
+    text-decoration: none;
+    background: #27ae60;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+}
+
+.sem-expositores .btn-atalho:hover {
+    background: #219150;
+    transform: translateY(-2px);
+}
+
+/* =========================
    RESPONSIVIDADE
 ========================= */
 
 @media(max-width: 768px){
 
     .topo{
-
         flex-direction: column;
-
         gap: 20px;
-
         text-align: center;
     }
 
     .topo h1{
         font-size: 1.7rem;
+    }
+
+    .container {
+        margin: 30px 15px;
+        padding: 30px 20px;
     }
 
 }
