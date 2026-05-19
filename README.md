@@ -197,13 +197,6 @@ responsividade avançada;
 hospedagem online.
 👨‍💻 Desenvolvido por
 
-ANDRE ZICATTI LEITE
-GUILHERME DOS SANTOS BUENO
-GUSTAVO HENRIQUE DE SOUZA
-RODOLFO TEIXEIRA DOS SANTOS
-THIEGO DA CUNHA PACHECO FERRERIRA
-KACIANY DOURADO TELES
-
 Projeto Integrador desenvolvido por estudantes do curso de:
 
 Análise e Desenvolvimento de Sistemas
